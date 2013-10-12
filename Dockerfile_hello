@@ -1,0 +1,3 @@
+FROM ubuntu
+MAINTAINER Frank Behrens, fbehrens@gmail.com
+RUN echo hello
