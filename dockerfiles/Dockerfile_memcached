@@ -1,0 +1,23 @@
+# Memcached
+# VERSION       2.2
+FROM ubuntu
+MAINTAINER Victor Coisne victor.coisne@dotcloud.com
+
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN apt-get update
+
+# install memcached
+RUN apt-get install -y memcached
+
+# Launch memcached when launching the container
+ENTRYPOINT ["memcached"]
+
+# run memcached as the daemon user
+USER daemon
+
+# expose memcached port
+EXPOSE 11211
+
+# build -t fbehrens/memcached - < Dockerfile_memcached
+# run fbehrens/memcached
+# ps
