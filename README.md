@@ -5,13 +5,17 @@ docker [OPTIONS] COMMAND [arg...]
 
 ## Dockerfile
 FROM
+
 MAINTAINER Frank Behrens,fbehrens@gmail.com
 
 RUN command
+
 ADD relative_tar_or_dir target_directory
 
 EXPOSE host:container # standart port redirection
+
 CMD cmd will be overwritten by given parameters, as JSON executes without shell
+
 ENTRYPOINT will be the executeble if this dockerfile to which parameters are piped to
 
 ## Commands
