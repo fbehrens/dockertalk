@@ -1,5 +1,7 @@
-alias sd='sudo docker'
+[slides](https://rawgithub.com/fbehrens/dockertalk/master/talk/index.html#/)
 
+
+## Docker Daemon
 docker [OPTIONS] COMMAND [arg...]
  -H=[unix:///var/run/docker.sock]: tcp://host:port to bind/connect to or unix://path/to/socket to use
 
