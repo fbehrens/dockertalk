@@ -70,12 +70,44 @@ version – Show the docker version information
 info – Display system-wide information
 
 
-
+## Code Examples
 alias sd='sudo docker'
 sd
 sd run
 
-
-
+sd images
 sd run -i ubuntu  /bin/sh
-# will download ubuntu base image from
+  ls
+  mkdir foo
+  touch foo/bar
+    sudo su -
+    cd /var/lib/docker/containers
+    docker ps
+    docker diff ..
+  CTRL z (suspend)
+  sd ps
+  sd attach
+  CTRL c
+  sd ps -a -n 3
+  sd attach
+  CTRL c
+
+
+memchached Example
+
+couch Example
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

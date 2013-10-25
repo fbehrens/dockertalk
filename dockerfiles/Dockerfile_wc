@@ -9,3 +9,5 @@ MAINTAINER Victor Coisne victor.coisne@dotcloud.com
 
 # count lines with wc
 ENTRYPOINT ["wc", "-l"]
+
+# run with

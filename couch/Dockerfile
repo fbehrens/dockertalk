@@ -18,5 +18,10 @@ RUN printf "[httpd]\nbind_address = 0.0.0.0" > /usr/local/etc/couchdb/local.d/do
 # \nport = 8000
 
 EXPOSE 5984:5984
+# this is the default couchdb port
+
+# run -p 60000:5984 fbehrens/couchdb
 
 CMD ["/usr/local/bin/couchdb"]
+
+# build -t fbehrens/couchdb1 .
